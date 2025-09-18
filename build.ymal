@@ -1,0 +1,45 @@
+# build.yaml
+targets:
+  $default:
+    builders:
+      # Your existing freezed configuration
+      # NOTE: The builder key might need to be 'freezed|freezed:'.
+      # If 'freezed:' works for you, keep it. If you get errors later, try 'freezed|freezed:'.
+      freezed:
+        # You might want to add generate_for here too for consistency, although maybe not strictly required if freezed isn't causing issues in test files
+        # generate_for:
+        #   include:
+        #     - lib/**.dart
+        #   exclude:
+        #     - test/**
+        options:
+          generic_argument_factories: true
+          union_value_case: snake
+
+      # Add configuration for json_serializable to exclude test files
+      # NOTE: Ensure 'json_serializable|json_serializable:' is the correct key for your project version.
+      json_serializable|json_serializable:
+        generate_for:
+          include:
+            - lib/**.dart # Process files in lib
+          exclude:
+            - test/** # Explicitly ignore files in test
+        # Add specific json_serializable options if you use them
+        # options:
+        #   explicit_to_json: true
+
+      # Add configuration for riverpod_generator to exclude test files
+      # NOTE: Check if the key should be 'riverpod_generator|provider:' or 'riverpod_generator|riverpod_generator:'.
+      riverpod_generator|provider:
+        generate_for:
+          include:
+            - lib/**.dart # Process files in lib
+          exclude:
+            - test/** # Explicitly ignore files in test
+        # Add specific riverpod_generator options if you use them
+        # options:
+        #   provider_family_identifier_name: P
+
+      # Mockito's builder usually doesn't need explicit configuration here.
+      # It will run based on annotations found, and the conflicts are resolved
+      # by telling the *other* builders to ignore the test files.

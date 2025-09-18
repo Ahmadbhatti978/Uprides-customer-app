@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "project_number": "669684729577",
+    "project_id": "uprides-1782f",
+    "storage_bucket": "uprides-1782f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669684729577:android:6eaaa588ba3dc52d881278",
+        "android_client_info": {
+          "package_name": "com.app.bold_driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669684729577-5nqk2ulik6pk9cqgfhu2mnonk89700c1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0-ElHwwwAMyJ9WNjDC1cLPaNxR3jkOCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669684729577-5nqk2ulik6pk9cqgfhu2mnonk89700c1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "669684729577-7jnf5qjdk1b7q1rs38nu8vshb15l7vl2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bold.customer",
+                "app_store_id": "6612036583"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669684729577:android:4eea7d1954dd18c3881278",
+        "android_client_info": {
+          "package_name": "com.bold.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669684729577-5nqk2ulik6pk9cqgfhu2mnonk89700c1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0-ElHwwwAMyJ9WNjDC1cLPaNxR3jkOCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669684729577-5nqk2ulik6pk9cqgfhu2mnonk89700c1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "669684729577-7jnf5qjdk1b7q1rs38nu8vshb15l7vl2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bold.customer",
+                "app_store_id": "6612036583"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

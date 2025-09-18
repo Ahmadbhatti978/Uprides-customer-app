@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+
+import '../core/model/coordinate.dart';
+import '../core/router/route.dart';
+import '../features/auth/model/user.dart';
+import '../features/auth/model/user_detail.dart';
+import '../features/booking/model/ride_request.dart';
+import '../features/home/model/availability.dart';
+import '../features/home/model/setting.dart';
+import '../l10n/app_localizations.dart';
+import '../l10n/app_localizations_en.dart';
+
+late MediaQueryData mediaQuery;
+String token = '';
+User? guser;
+UserDetail? userDetail;
+String? rideId;
+GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+Coordinate currentCoordinate = const Coordinate(latitude: 0, longitude: 0);
+final GlobalKey<ScaffoldMessengerState> scaffoldKey = GlobalKey<ScaffoldMessengerState>();
+Locale? slocal = const Locale('en', 'PT');
+String? fcmToken;
+RideRequest? rideRequest;
+String? customerID;
+String currentRoute = AppRoutes.language;
+AppLocalizations l10n = AppLocalizationsEn();
+bool appStarted = false;
+bool darkStatusBar = true;
+List<String> finshedRideId = [];
+Setting? setting;
+Availability availability = const Availability();

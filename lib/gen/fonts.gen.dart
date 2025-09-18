@@ -1,0 +1,18 @@
+/// GENERATED CODE - DO NOT MODIFY BY HAND
+/// *****************************************************
+///  FlutterGen
+/// *****************************************************
+
+// coverage:ignore-file
+// ignore_for_file: type=lint
+// ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
+
+class FontFamily {
+  FontFamily._();
+
+  /// Font family: Open
+  static const String open = 'Open';
+
+  /// Font family: Red Hat Display
+  static const String redHatDisplay = 'Red Hat Display';
+}
